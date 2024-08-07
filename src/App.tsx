@@ -1,7 +1,7 @@
 import ProductComparison from './pages/product-comparison'
 
 function App() {
-  return (
+  return (jilk
     <ProductComparison />
   )
 }
