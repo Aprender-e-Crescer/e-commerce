@@ -1,7 +1,7 @@
-import { AddProduct } from './lib/AddProduct'
-import { Body } from './lib/Body'
-import { Card } from './lib/Card'
-import { Text } from './lib/Text'
+import { AddProduct } from './components/AddProduct'
+import { Body } from './components/Body'
+import { Card } from './components/Card'
+import { Text } from './components/Text'
 
 function App() {
   return (
