@@ -1,19 +1,16 @@
-import { Cards } from '../components/Cards'
 import { Filter } from '../components/Filter'
-import { Cards2 } from '../components/Cards2'
+import { Cards } from '../components/Cards'
 import { Buttons } from '../components/Buttons'
 
-const Card = new Array(3).fill(null)
+const Card = [true, false, false, false]
+
 function Shop() {
   return (
     <>
       <Filter />
-      <div className="flex items-center justify-center pt-16 pb-5">
-        <Cards />
-      </div>
       <div className="flex flex-col items-center justify-center gap-y-5">
-        {Card.map(() => (
-          <Cards2 />
+        {Card.map((estaComHover) => (
+          <Cards estaComHover={estaComHover} />
         ))}
       </div>
       <div className="pt-10">
