@@ -10,18 +10,18 @@ function App() {
         <Text />
         <div className="flex gap-16 mb-28">
           <Card
-            text="Asgaard Sofa"
+            texto="Asgaard Sofa"
             moneyText="Rs. 250,000.00"
             reviewText="204 Review"
           />
           <Card
-            text="Outdoor Sofa Set"
+            texto="Outdoor Sofa Set"
             moneyText="Rs. 224,000.00"
             reviewText="145 Review"
           />
         </div>
         <div className="mt-10w">
-          <AddProduct />
+          <AddProduct text=" Choose a Product" />
         </div>
       </div>
       <div className="flex ml-24">
