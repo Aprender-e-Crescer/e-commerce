@@ -12,6 +12,7 @@ import image5 from '../assets/home/cardsdown1.png'
 import image6 from '../assets/home/cardsdown2.png'
 import image7 from '../assets/home/cardsdown3.png'
 import image8 from '../assets/home/cardsdown4.png'
+import { Footer } from '@/components/footer'
 
 const linhasDeCards = [
   [
@@ -158,6 +159,7 @@ export default function Home() {
       <Button />
       <Carrossel />
       <ImagemBaixo />
+      <Footer />
     </div>
   )
 }
