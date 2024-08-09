@@ -62,14 +62,13 @@ export function ProductCard({
           <h1 className="text-[#3A3A3A] font-Poppins-ExtraBold font-bold text-2xl">
             {titulo}
           </h1>
-          <p className="flex-1 w-[138px] h-[24px] text-[#898989] font-Poppins-Medium text-[15px]">
+          <p className="flex-1 w-[200px] h-[24px] text-[#898989] font-Poppins-Medium text-[15px]">
             {descrição}
           </p>
         </div>
-        <div className="flex ml-4 gap-x-12">
-          <p className="text-[#3A3A3A] font-Poppins-Medium font-bold">
-            {valorAtual}
-          </p>
+        <div className="flex ml-4 gap-x-8">
+          <p className="text-[#3A3A3A] font-bold text-[22px]">{valorAtual}</p>
+
           {estaComPorcentagem && (
             <p className="absolute top-4 right-4 text-[#ffffff] bg-[#E97171] rounded-full w-10 h-10 text-[12px] flex items-center justify-center">
               {porcentagem}
