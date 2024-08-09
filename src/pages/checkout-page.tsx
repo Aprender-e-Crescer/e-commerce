@@ -1,6 +1,6 @@
-import { ComboboxDemo } from "./components/ui/Combobox"
-import { Input } from "./components/ui/input"
-import { Label } from "./components/ui/label"
+import { ComboboxDemo } from "@/components/Combobox"
+import { Input } from "@/components/input"
+import { Label } from "@/components/label"
 
 export function CheckoutPage() {
   return (
