@@ -24,8 +24,8 @@ export function CheckoutPage() {
       <Label>Company Name(Optional)</Label>
       <Input />
 
+      <Label className="mb-6">Country / Region</Label>
       <ComboboxDemo />
-      <Input />
 
       <Label>Street Adress</Label>
       <Input />
@@ -34,7 +34,7 @@ export function CheckoutPage() {
       <Input />
 
        <Label>Province</Label>
-      <Input />
+      <ComboboxDemo />
 
        <Label>Zip Code</Label>
       <Input />

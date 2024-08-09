@@ -21,24 +21,24 @@ import {
 
 const frameworks = [
   {
-    value: "next.js",
-    label: "Next.js",
+    value: "Dois Vizinhos",
+    label: "Dois Vizinhos",
   },
   {
-    value: "sveltekit",
-    label: "SvelteKit",
+    value: "SmallVille",
+    label: "SmallVille",
   },
   {
-    value: "nuxt.js",
-    label: "Nuxt.js",
+    value: "NewYork",
+    label: "NewYork",
   },
   {
-    value: "remix",
-    label: "Remix",
+    value: "Cidad del leste",
+    label: "Cidad del leste",
   },
   {
-    value: "astro",
-    label: "Astro",
+    value: "Gothan city",
+    label: "Gothan city",
   },
 ]
 
@@ -53,19 +53,19 @@ export function ComboboxDemo() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[200px] justify-between"
+          className="w-full justify-between mb-7 text-gray-500 border-slate-400"
         >
           {value
             ? frameworks.find((framework) => framework.value === value)?.label
-            : "Select Country..."}
+            : "Select here..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
         <Command>
-          <CommandInput placeholder="Search framework..." />
+          <CommandInput placeholder="Search location..."/>
           <CommandList>
-            <CommandEmpty>No framework found.</CommandEmpty>
+            <CommandEmpty>No country found.</CommandEmpty>
             <CommandGroup>
               {frameworks.map((framework) => (
                 <CommandItem
