@@ -8,7 +8,7 @@ import { Filter } from '@/components/Filter'
 import Menu from '@/componentes/Menu'
 import Banner from '@/componentes/banner'
 import { Footer } from '@/components/footer'
-import FooterInfo from '@/components/footerInfo'
+import FooterInfo from '@/components/FooterInfo'
 
 const linhasDeCards = [
   [
