@@ -10,8 +10,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-
-.font-poppins {
-  font-family: 'Poppins', sans-serif;
-}
