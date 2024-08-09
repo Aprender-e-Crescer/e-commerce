@@ -24,6 +24,7 @@ const linhasDeCards = [
       estaComPorcentagem: true,
       porcentagem: '90',
       estaComNew: false,
+      temValorPassado: false,
       valorPassado: '900',
     },
     {
@@ -35,6 +36,7 @@ const linhasDeCards = [
       estaComPorcentagem: true,
       porcentagem: '90',
       estaComNew: false,
+      temValorPassado: false,
       valorPassado: '900',
     },
     {
@@ -46,6 +48,7 @@ const linhasDeCards = [
       estaComPorcentagem: false,
       porcentagem: '90',
       estaComNew: true,
+      temValorPassado: true,
       valorPassado: '900',
     },
     {
@@ -57,6 +60,7 @@ const linhasDeCards = [
       estaComPorcentagem: false,
       porcentagem: '90',
       estaComNew: true,
+      temValorPassado: true,
       valorPassado: '900',
     },
   ],
@@ -70,6 +74,7 @@ const linhasDeCards = [
       estaComPorcentagem: true,
       porcentagem: '90',
       estaComNew: false,
+      temValorPassado: true,
       valorPassado: '900',
     },
     {
@@ -81,6 +86,7 @@ const linhasDeCards = [
       estaComPorcentagem: true,
       porcentagem: '90',
       estaComNew: false,
+      temValorPassado: true,
       valorPassado: '900',
     },
     {
@@ -92,6 +98,7 @@ const linhasDeCards = [
       estaComPorcentagem: false,
       porcentagem: '90',
       estaComNew: true,
+      temValorPassado: true,
       valorPassado: '900',
     },
     {
@@ -103,6 +110,7 @@ const linhasDeCards = [
       estaComPorcentagem: false,
       porcentagem: '90',
       estaComNew: true,
+      temValorPassado: true,
       valorPassado: '900',
     },
   ],
@@ -127,6 +135,7 @@ export default function Home() {
                 estaComNew,
                 titulo,
                 valorAtual,
+                temValorPassado,
                 valorPassado,
               }) => (
                 <ProductCard
@@ -138,6 +147,7 @@ export default function Home() {
                   estaComPorcentagem={estaComPorcentagem}
                   porcentagem={porcentagem}
                   estaComNew={estaComNew}
+                  temValorPassado={temValorPassado}
                   valorPassado={valorPassado}
                 />
               )

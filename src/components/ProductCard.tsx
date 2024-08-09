@@ -7,6 +7,7 @@ export function ProductCard({
   estaComPorcentagem,
   porcentagem,
   estaComNew,
+  temValorPassado,
   valorPassado,
   img,
   estaComHover,
@@ -18,6 +19,7 @@ export function ProductCard({
   estaComPorcentagem: boolean
   porcentagem: string
   estaComNew: boolean
+  temValorPassado: boolean
   valorPassado: string
   img: string
 }) {
@@ -64,28 +66,27 @@ export function ProductCard({
             {descrição}
           </p>
         </div>
-        <div className="flex ml-4 gap-x-2">
+        <div className="flex ml-4 gap-x-12">
           <p className="text-[#3A3A3A] font-Poppins-Medium font-bold">
             {valorAtual}
           </p>
-          {valorPassado && (
-            <p className="text-[#B0B0B0] font-Poppins-Medium line-through">
+          {estaComPorcentagem && (
+            <p className="absolute top-4 right-4 text-[#ffffff] bg-[#E97171] rounded-full w-10 h-10 text-[12px] flex items-center justify-center">
+              {porcentagem}
+            </p>
+          )}
+          {estaComNew && (
+            <p className="absolute top-4 right-4 text-[#ffffff] bg-[#30d1512] rounded-full w-10 h-10 text-[12px] flex items-center justify-center">
+              New
+            </p>
+          )}
+          {temValorPassado && (
+            <p className="w-[102px] h-[24px] font-Poppins-Medium line-through text-[#B0B0B0]">
               {valorPassado}
             </p>
           )}
         </div>
       </div>
-
-      {estaComPorcentagem && (
-        <p className="absolute top-4 right-4 text-[#ffffff] bg-[#E97171] rounded-full w-10 h-10 text-[12px] flex items-center justify-center">
-          {porcentagem}
-        </p>
-      )}
-      {estaComNew && (
-        <p className="absolute top-4 right-4 text-[#ffffff] bg-[#30d158] rounded-full w-10 h-10 text-[12px] flex items-center justify-center">
-          New
-        </p>
-      )}
     </div>
   )
 }
