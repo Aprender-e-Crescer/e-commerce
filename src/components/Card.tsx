@@ -13,7 +13,7 @@ export function Card({
   return (
     <div className="flex flex-col gap-3">
       <div className="w-[280px] h-[177px] rounded-xl bg-[#F9F1E7] flex justify-center items-center ">
-        <img src={Asgaardsofa3} />
+        <img title='sofa' src={Asgaardsofa3} />
       </div>
 
       <div className="flex-1 flex gap-3 flex-col">

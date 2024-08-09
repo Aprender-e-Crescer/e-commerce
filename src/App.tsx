@@ -1,11 +1,11 @@
 import ProductComparison from './pages/product-comparison';
-import {Footer} from './components/footer';
+import {SingleProduct} from './pages/SingleProduct';
 
 function App() {
   return (
     <>
       <ProductComparison />
-      <Footer />
+      <SingleProduct />
     </>
   );
 }
