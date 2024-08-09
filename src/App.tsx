@@ -1,13 +1,7 @@
-import ProductComparison from './pages/product-comparison';
-import {Footer} from './components/footer';
+import Cart from "./pages/Cart";
 
 function App() {
-  return (
-    <>
-      <ProductComparison />
-      <Footer />
-    </>
-  );
+  return <Cart />;
 }
 
 export default App;
