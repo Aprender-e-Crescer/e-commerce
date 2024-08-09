@@ -1,9 +1,13 @@
-import ProductComparison from './pages/product-comparison'
+import ProductComparison from './pages/product-comparison';
+import {Footer} from './components/footer';
 
 function App() {
   return (
-    <ProductComparison />
-  )
+    <>
+      <ProductComparison />
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
