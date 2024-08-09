@@ -1,194 +1,250 @@
-import { Buttons } from '../components/Buttons'
 import image1 from '../assets/Images.png'
+import image2 from '../assets/Images (1).png'
+import image3 from '../assets/Images (2).png'
+import image4 from '../assets/Images (3).png'
 import { ProductCard } from '@/components/ProductCard'
+import { Buttons } from '@/components/Buttons'
 import { Filter } from '@/components/Filter'
 
 const linhasDeCards = [
   [
     {
-      descrição: 'Teste', 
+      descrição: 'Stylish cafe chair',
       estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
+      titulo: 'Syltherine',
+      valorAtual: 'Rp 2.500.000',
       img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
+      estaComPorcentagem: true,
+      porcentagem: '-30%',
+      estaComNew: false,
+      temValorPassado: true,
+      valorPassado: 'Rp 2.500.000',
     },
     {
-      descrição: 'Teste', 
+      descrição: 'Stylish cafe chair',
       estaComHover: true,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
+      titulo: 'Leviosa',
+      valorAtual: 'Rp 2.500.000',
+      img: image2,
+      estaComPorcentagem: false,
       porcentagem: '90',
+      estaComNew: false,
+      temValorPassado: false,
       valorPassado: '900',
     },
     {
-      descrição: 'Teste', 
+      descrição: 'Luxury big sofa',
       estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
+      titulo: 'Lolito',
+      valorAtual: 'Rp 7.000.000',
+      img: image3,
+      estaComPorcentagem: true,
+      porcentagem: '-50%',
+      estaComNew: false,
+      temValorPassado: true,
+      valorPassado: 'Rp 14.000.000',
+    },
+    {
+      descrição: 'Outdoor bar table and stool',
+      estaComHover: false,
+      titulo: 'Respira',
+      valorAtual: 'Rp 500.000',
+      img: image4,
+      estaComPorcentagem: false,
       porcentagem: '90',
+      estaComNew: true,
+      temValorPassado: false,
       valorPassado: '900',
     },
     {
-      descrição: 'Teste', 
+      descrição: 'Stylish cafe chair',
       estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
+      titulo: 'Syltherine',
+      valorAtual: 'Rp 2.500.000',
       img: image1,
+      estaComPorcentagem: true,
+      porcentagem: '-30%',
+      estaComNew: false,
+      temValorPassado: true,
+      valorPassado: 'Rp 2.500.000',
+    },
+    {
+      descrição: 'Stylish cafe chair',
+      estaComHover: false,
+      titulo: 'Leviosa',
+      valorAtual: 'Rp 2.500.000',
+      img: image2,
+      estaComPorcentagem: false,
       porcentagem: '90',
+      estaComNew: false,
+      temValorPassado: false,
       valorPassado: '900',
-    }
+    },
+    {
+      descrição: 'Luxury big sofa',
+      estaComHover: false,
+      titulo: 'Lolito',
+      valorAtual: 'Rp 7.000.000',
+      img: image3,
+      estaComPorcentagem: true,
+      porcentagem: '-50%',
+      estaComNew: false,
+      temValorPassado: true,
+      valorPassado: 'Rp 14.000.000',
+    },
+    {
+      descrição: 'Outdoor bar table and stool',
+      estaComHover: false,
+      titulo: 'Respira',
+      valorAtual: 'Rp 500.000',
+      img: image4,
+      estaComPorcentagem: false,
+      porcentagem: '90',
+      estaComNew: true,
+      temValorPassado: false,
+      valorPassado: '900',
+    },
+    {
+      descrição: 'Stylish cafe chair',
+      estaComHover: false,
+      titulo: 'Syltherine',
+      valorAtual: 'Rp 2.500.000',
+      img: image1,
+      estaComPorcentagem: true,
+      porcentagem: '-30%',
+      estaComNew: false,
+      temValorPassado: true,
+      valorPassado: 'Rp 2.500.000',
+    },
+    {
+      descrição: 'Stylish cafe chair',
+      estaComHover: false,
+      titulo: 'Leviosa',
+      valorAtual: 'Rp 2.500.000',
+      img: image2,
+      estaComPorcentagem: false,
+      porcentagem: '90',
+      estaComNew: false,
+      temValorPassado: false,
+      valorPassado: '900',
+    },
+    {
+      descrição: 'Luxury big sofa',
+      estaComHover: false,
+      titulo: 'Lolito',
+      valorAtual: 'Rp 7.000.000',
+      img: image3,
+      estaComPorcentagem: true,
+      porcentagem: '-50%',
+      estaComNew: false,
+      temValorPassado: true,
+      valorPassado: 'Rp 14.000.000',
+    },
+    {
+      descrição: 'Outdoor bar table and stool',
+      estaComHover: false,
+      titulo: 'Respira',
+      valorAtual: 'Rp 500.000',
+      img: image4,
+      estaComPorcentagem: false,
+      porcentagem: '90',
+      estaComNew: true,
+      temValorPassado: false,
+      valorPassado: '900',
+    },
+    {
+      descrição: 'Stylish cafe chair',
+      estaComHover: false,
+      titulo: 'Syltherine',
+      valorAtual: 'Rp 2.500.000',
+      img: image1,
+      estaComPorcentagem: true,
+      porcentagem: '-30%',
+      estaComNew: false,
+      temValorPassado: true,
+      valorPassado: 'Rp 2.500.000',
+    },
+    {
+      descrição: 'Stylish cafe chair',
+      estaComHover: false,
+      titulo: 'Leviosa',
+      valorAtual: 'Rp 2.500.000',
+      img: image2,
+      estaComPorcentagem: false,
+      porcentagem: '90',
+      estaComNew: false,
+      temValorPassado: false,
+      valorPassado: '900',
+    },
+    {
+      descrição: 'Luxury big sofa',
+      estaComHover: false,
+      titulo: 'Lolito',
+      valorAtual: 'Rp 7.000.000',
+      img: image3,
+      estaComPorcentagem: true,
+      porcentagem: '-50%',
+      estaComNew: false,
+      temValorPassado: true,
+      valorPassado: 'Rp 14.000.000',
+    },
+    {
+      descrição: 'Outdoor bar table and stool',
+      estaComHover: false,
+      titulo: 'Respira',
+      valorAtual: 'Rp 500.000',
+      img: image4,
+      estaComPorcentagem: false,
+      porcentagem: '90',
+      estaComNew: true,
+      temValorPassado: false,
+      valorPassado: '900',
+    },
   ],
-  [
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    },
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    },
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    },
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    }
-  ],
-  [
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    },
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    },
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    },
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    }
-  ],
-  [
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    },
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    },
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    },
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    }
-  ],  
 ]
 
 function Shop() {
   return (
     <>
       <Filter />
-      <div className="flex flex-col items-center justify-center gap-y-5 pt-10">
-      {linhasDeCards.map((linha) => (
-        <div className="flex gap-x-12">
-          {linha.map(({ 
-            descrição,
-            estaComHover,
-            img,
-            porcentagem,
-            titulo,
-            valorAtual,
-            valorPassado
-          }) => (
-            <ProductCard
-              descrição={descrição}
-              estaComHover={estaComHover}
-              titulo={titulo}
-              valorAtual={valorAtual}
-              img={img}
-              porcentagem={porcentagem}
-              valorPassado={valorPassado}
-            />
+      <div className="flex flex-col items-center justify-center gap-y-16">
+        <div className="flex flex-col items-center justify-center gap-y-5 pt-10">
+          <p className="font-bold text-[50px] text-[#3A3A3A]">Our Products</p>
+          {linhasDeCards.map((linha) => (
+            <div className="flex gap-x-12 items-center justify-center flex-wrap gap-10">
+              {linha.map(
+                ({
+                  descrição,
+                  estaComHover,
+                  img,
+                  estaComPorcentagem,
+                  porcentagem,
+                  estaComNew,
+                  titulo,
+                  valorAtual,
+                  temValorPassado,
+                  valorPassado,
+                }) => (
+                  <ProductCard
+                    descrição={descrição}
+                    estaComHover={estaComHover}
+                    titulo={titulo}
+                    valorAtual={valorAtual}
+                    img={img}
+                    estaComPorcentagem={estaComPorcentagem}
+                    porcentagem={porcentagem}
+                    estaComNew={estaComNew}
+                    temValorPassado={temValorPassado}
+                    valorPassado={valorPassado}
+                  />
+                )
+              )}
+            </div>
           ))}
         </div>
-      ))}
-      </div>
-      <div className="pt-10">
-        <Buttons />
+        <div className="pt-10">
+          <Buttons />
+        </div>
       </div>
     </>
   )
