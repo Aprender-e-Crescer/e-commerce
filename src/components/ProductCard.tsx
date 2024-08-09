@@ -76,7 +76,7 @@ export function ProductCard({
             </p>
           )}
           {estaComNew && (
-            <p className="absolute top-4 right-4 text-[#ffffff] bg-[#30d1512] rounded-full w-10 h-10 text-[12px] flex items-center justify-center">
+            <p className="absolute top-4 right-4 text-[#ffffff] bg-[#2EC1AC] rounded-full w-10 h-10 text-[12px] flex items-center justify-center">
               New
             </p>
           )}

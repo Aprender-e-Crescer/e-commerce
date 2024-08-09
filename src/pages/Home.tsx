@@ -5,13 +5,13 @@ import { Button } from '../components/ButtonHome'
 import { ImagemBaixo } from '../components/ImagemBaixoHome'
 import { ProductCard } from '@/components/ProductCard'
 import image1 from '../assets/Images.png'
-/*import image2 from '../assets/Images (1).png'
+import image2 from '../assets/Images (1).png'
 import image3 from '../assets/Images (2).png'
 import image4 from '../assets/Images (3).png'
 import image5 from '../assets/home/cardsdown1.png'
 import image6 from '../assets/home/cardsdown2.png'
 import image7 from '../assets/home/cardsdown3.png'
-import image8 from '../assets/home/cardsdown4.png' */
+import image8 from '../assets/home/cardsdown4.png'
 
 const linhasDeCards = [
   [
@@ -32,8 +32,8 @@ const linhasDeCards = [
       estaComHover: true,
       titulo: 'Produto bom',
       valorAtual: '6000',
-      img: image1,
-      estaComPorcentagem: true,
+      img: image2,
+      estaComPorcentagem: false,
       porcentagem: '90',
       estaComNew: false,
       temValorPassado: false,
@@ -44,10 +44,10 @@ const linhasDeCards = [
       estaComHover: false,
       titulo: 'Produto bom',
       valorAtual: '6000',
-      img: image1,
-      estaComPorcentagem: false,
+      img: image3,
+      estaComPorcentagem: true,
       porcentagem: '90',
-      estaComNew: true,
+      estaComNew: false,
       temValorPassado: true,
       valorPassado: '900',
     },
@@ -56,7 +56,7 @@ const linhasDeCards = [
       estaComHover: false,
       titulo: 'Produto bom',
       valorAtual: '6000',
-      img: image1,
+      img: image4,
       estaComPorcentagem: false,
       porcentagem: '90',
       estaComNew: true,
@@ -70,7 +70,7 @@ const linhasDeCards = [
       estaComHover: false,
       titulo: 'Produto bom',
       valorAtual: '6000',
-      img: image1,
+      img: image5,
       estaComPorcentagem: true,
       porcentagem: '90',
       estaComNew: false,
@@ -82,7 +82,7 @@ const linhasDeCards = [
       estaComHover: true,
       titulo: 'Produto bom',
       valorAtual: '6000',
-      img: image1,
+      img: image6,
       estaComPorcentagem: true,
       porcentagem: '90',
       estaComNew: false,
@@ -94,7 +94,7 @@ const linhasDeCards = [
       estaComHover: false,
       titulo: 'Produto bom',
       valorAtual: '6000',
-      img: image1,
+      img: image7,
       estaComPorcentagem: false,
       porcentagem: '90',
       estaComNew: true,
@@ -106,7 +106,7 @@ const linhasDeCards = [
       estaComHover: false,
       titulo: 'Produto bom',
       valorAtual: '6000',
-      img: image1,
+      img: image8,
       estaComPorcentagem: false,
       porcentagem: '90',
       estaComNew: true,
