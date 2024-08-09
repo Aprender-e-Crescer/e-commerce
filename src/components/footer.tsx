@@ -1,4 +1,3 @@
-
 export function Footer() {
   return (
     <footer className="bg-white box-border  mt-5 ml-11 mr-24">
