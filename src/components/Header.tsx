@@ -29,7 +29,7 @@ export function Header() {
       </div>
 
       <div className="relative">
-        <img className="w-full h-[316px] object-cover" src={rectangle} />
+        <img title='retangulo' className="w-full h-[316px] object-cover" src={rectangle} />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-black">
         <p className="text-4xl font-medium mb-2">Shop</p>
         <div className="flex gap-2 items-center">
