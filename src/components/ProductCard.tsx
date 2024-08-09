@@ -63,7 +63,7 @@ export function ProductCard({
           <h1 className="text-[#3A3A3A] font-Poppins-ExtraBold font-bold text-2xl">
             {titulo}
           </h1>
-          <p className="flex-1 w-[150px] h-[24px] text-[#898989] font-Poppins-Medium text-[15px]">
+          <p className="flex-1 w-[200px] h-[24px] text-[#898989] font-Poppins-Medium text-[15px]">
             {descrição}
           </p>
         </div>
