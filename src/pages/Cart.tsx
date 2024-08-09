@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer.tsx";
 import Menu from "../componentes/Menu";
 import Banner from "../componentes/banner";
 import CardPage from '../componentes/cardPage.tsx';
@@ -23,7 +24,7 @@ function Cart() {
       <Banner titulo="Cart" nomeTelaInicial="Home" />
       <CardPage />
       <Carrosel />
-      {/* <Footer />  */}
+       <Footer />  
     </div>
   );
 }
