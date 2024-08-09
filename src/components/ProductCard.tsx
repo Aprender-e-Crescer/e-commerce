@@ -1,6 +1,6 @@
 import { ArrowLeftRight, Heart, Share2 } from "lucide-react"
 
-export function Card({
+export function ProductCard({
   titulo,
   descrição,
   valorAtual,

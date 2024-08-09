@@ -1,6 +1,7 @@
 import { Buttons } from '../components/Buttons'
 import image1 from '../assets/Images.png'
-import { Card } from '@/components/Card'
+import { ProductCard } from '@/components/ProductCard'
+import { Filter } from '@/components/Filter'
 
 const linhasDeCards = [
   [
@@ -173,7 +174,7 @@ function Shop() {
             valorAtual,
             valorPassado
           }) => (
-            <Card
+            <ProductCard
               descrição={descrição}
               estaComHover={estaComHover}
               titulo={titulo}
