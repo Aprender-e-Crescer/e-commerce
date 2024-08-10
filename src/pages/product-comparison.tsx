@@ -1,4 +1,3 @@
-import CartMenu from '@/components/component/cartMenu'
 import { AddProduct } from '../components/AddProduct'
 import { Body } from '../components/Body'
 import { Card } from '../components/Card'
