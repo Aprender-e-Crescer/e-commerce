@@ -6,6 +6,7 @@ import { Text } from '../components/Text'
 import { Footer } from '@/components/footer'
 import Banner from '@/componentes/banner'
 import Menu from '@/componentes/Menu'
+import FooterInfo from '@/components/FooterInfo'
 
 function ProductComparison() {
   return (
@@ -34,6 +35,7 @@ function ProductComparison() {
       <div className="flex ml-24">
         <Body />
       </div>
+      <FooterInfo/>
       <Footer/>
     </>
   )
