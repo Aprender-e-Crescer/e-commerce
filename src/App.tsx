@@ -1,7 +1,8 @@
 import Cart from "./pages/Cart";
+import ProductComparison from "./pages/product-comparison";
 
 function App() {
-  return <Cart />;
+  return <ProductComparison/>
 }
 
 export default App;
