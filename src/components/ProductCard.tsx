@@ -24,13 +24,13 @@ export function ProductCard({
   img: string
 }) {
   return (
-    <div className="bg-[#F4F5F7] h-[446px] w-[285px] relative">
+    <div className="bg-[#F4F5F7] h-[446px] w-[285px] relative ">
       {estaComHover ? (
         <div className="relative">
           <div className="flex font-bold absolute top-52 left-16 -mt-10 z-10 bg-white w-44 text-[#B88E2F] p-2 justify-center text-center">
             Adicionar ao carrinho
           </div>
-          <div className="flex items-center justify-center text-center absolute top-64 text-white -mt-7 z-10 gap-x-6 pr-1 pl-1">
+          <div className="flex items-center justify-center text-center absolute top-64 text-white -mt-7 z-10 gap-x-2 pr-1 pl-1">
             <p className="flex gap-x-[2px] font-Poppins font-bold text-base">
               <Share2 className="w-4 h-4 mt-1" /> Compartilhar
             </p>
