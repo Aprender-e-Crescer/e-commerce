@@ -13,6 +13,7 @@ import image6 from '../assets/home/cardsdown2.png'
 import image7 from '../assets/home/cardsdown3.png'
 import image8 from '../assets/home/cardsdown4.png'
 import { Footer } from '@/components/footer'
+import Menu from '@/componentes/Menu'
 
 const linhasDeCards = [
   [
@@ -119,47 +120,50 @@ const linhasDeCards = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-16">
-      <BannerInicio />
-      <Filtro />
-      <div className="flex flex-col items-center justify-center gap-y-5 pt-10">
-        <p className="font-bold text-[50px] text-[#3A3A3A]">Our Products</p>
-        {linhasDeCards.map((linha) => (
-          <div className="flex gap-x-12">
-            {linha.map(
-              ({
-                descrição,
-                estaComHover,
-                img,
-                estaComPorcentagem,
-                porcentagem,
-                estaComNew,
-                titulo,
-                valorAtual,
-                temValorPassado,
-                valorPassado,
-              }) => (
-                <ProductCard
-                  descrição={descrição}
-                  estaComHover={estaComHover}
-                  titulo={titulo}
-                  valorAtual={valorAtual}
-                  img={img}
-                  estaComPorcentagem={estaComPorcentagem}
-                  porcentagem={porcentagem}
-                  estaComNew={estaComNew}
-                  temValorPassado={temValorPassado}
-                  valorPassado={valorPassado}
-                />
-              )
-            )}
-          </div>
-        ))}
+    <>
+      <Menu />
+      <div className="flex flex-col items-center justify-center gap-y-16">
+        <BannerInicio />
+        <Filtro />
+        <div className="flex flex-col items-center justify-center gap-y-5 pt-10">
+          <p className="font-bold text-[50px] text-[#3A3A3A]">Our Products</p>
+          {linhasDeCards.map((linha) => (
+            <div className="flex gap-x-12">
+              {linha.map(
+                ({
+                  descrição,
+                  estaComHover,
+                  img,
+                  estaComPorcentagem,
+                  porcentagem,
+                  estaComNew,
+                  titulo,
+                  valorAtual,
+                  temValorPassado,
+                  valorPassado,
+                }) => (
+                  <ProductCard
+                    descrição={descrição}
+                    estaComHover={estaComHover}
+                    titulo={titulo}
+                    valorAtual={valorAtual}
+                    img={img}
+                    estaComPorcentagem={estaComPorcentagem}
+                    porcentagem={porcentagem}
+                    estaComNew={estaComNew}
+                    temValorPassado={temValorPassado}
+                    valorPassado={valorPassado}
+                  />
+                )
+              )}
+            </div>
+          ))}
+        </div>
+        <Button />
+        <Carrossel />
+        <ImagemBaixo />
+        <Footer />
       </div>
-      <Button />
-      <Carrossel />
-      <ImagemBaixo />
-      <Footer />
-    </div>
+    </>
   )
 }
