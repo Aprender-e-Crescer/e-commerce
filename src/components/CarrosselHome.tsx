@@ -6,7 +6,7 @@ import img from '../assets/home/carrossel3.png'
 
 export function Carrossel() {
   return (
-    <div className="bg-[#FCF8F3] px-[400px] py-14 flex items-center justify-center gap-x-10 m-0 overflowx-hidden">
+    <div className="bg-[#FCF8F3] px-[250px] py-14 flex items-center justify-center gap-x-10 m-0 overflowx-hidden">
       <div className="flex flex-col gap-4">
         <p className="text-4xl font-bold text-[#3A3A3A] ">
           50+ Beautiful rooms
@@ -25,16 +25,18 @@ export function Carrossel() {
           Explore More
         </button>
       </div>
-      <div className="relative bg-[url('./assets/home/carrossel1.png')] w-[404px] h-[582px] flex">
-        <div className="absolute bottom-5 right-[120px] bg-[#B88E2F]">
-          <button className="w-[48px] h-[48px] pl-3">
-            <img src={seta} alt="" />
-          </button>
-        </div>
-        <div className="bg-white/75 w-[217px] h-[130px] absolute left-5 bottom-5 flex flex-col justify-center items-center">
-          <div>
-            <p className="text-[#616161] font-medium">01 ---- Bed Room</p>
-            <p className="text-[28px] font-bold text-[#3A3A3A]">Inner Peace</p>
+      <div className=" flex bg-[url('./assets/home/carrossel1.png')] w-[404px] h-[582px] items-end">
+      <div className='flex items-end ml-7 mb-7'>
+          <div className="bg-white/75 w-[217px] h-[130px] left-5 bottom-5 flex flex-col justify-center items-center">
+            <div>
+              <p className="text-[#616161] font-medium">01 ---- Bed Room</p>
+              <p className="text-[28px] font-bold text-[#3A3A3A]">Inner Peace</p>
+            </div>
+          </div>
+          <div className="w-[48px] h-[48px] flex flex-col justify-center items-center bg-[#B88E2F]">
+            <button>
+              <img src={seta} alt="" />
+            </button>
           </div>
         </div>
       </div>
