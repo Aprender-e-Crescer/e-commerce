@@ -26,11 +26,13 @@ export function Carrossel() {
         </button>
       </div>
       <div className=" flex bg-[url('./assets/home/carrossel1.png')] w-[404px] h-[582px] items-end">
-      <div className='flex items-end ml-7 mb-7'>
+        <div className="flex items-end ml-7 mb-7">
           <div className="bg-white/75 w-[217px] h-[130px] left-5 bottom-5 flex flex-col justify-center items-center">
             <div>
               <p className="text-[#616161] font-medium">01 ---- Bed Room</p>
-              <p className="text-[28px] font-bold text-[#3A3A3A]">Inner Peace</p>
+              <p className="text-[28px] font-bold text-[#3A3A3A]">
+                Inner Peace
+              </p>
             </div>
           </div>
           <div className="w-[48px] h-[48px] flex flex-col justify-center items-center bg-[#B88E2F]">
