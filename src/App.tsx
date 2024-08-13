@@ -1,6 +1,4 @@
-
-import { CheckoutPage } from './pages/checkout-page'
-import ProductComparison from './pages/product-comparison'
+import { CheckoutPage } from './pages/checkout-page';
 
 export function App() {
   return (
@@ -9,4 +7,3 @@ export function App() {
     </>
   )
 }
-
