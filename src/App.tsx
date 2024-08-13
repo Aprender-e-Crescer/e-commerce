@@ -1,7 +1,7 @@
-import Cart from "./pages/Cart";
+import Shop from './pages/Shop'
 
 function App() {
-  return <Cart />;
+  return <Shop />
 }
 
-export default App;
+export default App
