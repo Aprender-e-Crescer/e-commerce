@@ -6,45 +6,60 @@ import { Descricao } from '../components/Description'
 import { ProductCard } from '@/components/ProductCard'
 import { Header } from '@/components/Header'
 import image1 from '../assets/Images.png'
-import { Button } from '../components/Button'
+import { Button } from '../components/ButtonHome'
+import Imagem3 from '../assets/Images (3).png'
+import Imagem1 from '../assets/Images (1).png'
+import Imagem2 from '../assets/Images (2).png'
 const linhasDeCards = [
   [
     {
-      descrição: 'Teste', 
+      descrição: 'Stylish cafe chair',
       estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
+      titulo: 'Syltherine',
+      valorAtual: 'Rp 2.500.000',
       img: image1,
+      estaComPorcentagem: true,
+      porcentagem: '-30%',
+      estaComNew: false,
+      temValorPassado: true,
+      valorPassado: 'Rp 3.500.000',
+    },
+    {
+      descrição: 'Stylish cafe chair',
+      estaComHover: false,
+      titulo: 'Leviosa',
+      valorAtual: 'Rp 2.500.000',
+      img: Imagem3,
+      estaComPorcentagem: false,
       porcentagem: '90',
+      estaComNew: false,
+      temValorPassado: false,
       valorPassado: '900',
     },
     {
-      descrição: 'Teste', 
-      estaComHover: true,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
+      descrição: 'Luxury big sofa',
+      estaComHover: false,
+      titulo: 'Lolito',
+      valorAtual: 'Rp 7.000.000',
+      img: Imagem1,
+      estaComPorcentagem: true,
+      porcentagem: '-50%',
+      estaComNew: false,
+      temValorPassado: true,
+      valorPassado: '14.000.000',
     },
     {
-      descrição: 'Teste', 
+      descrição: 'Outdoor bar table and stool',
       estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
+      titulo: 'Respira',
+      valorAtual: 'Rp 500.000',
+      img: Imagem2,
+      estaComPorcentagem: false,
       porcentagem: '90',
+      estaComNew: true,
+      temValorPassado: false,
       valorPassado: '900',
     },
-    {
-      descrição: 'Teste', 
-      estaComHover: false,
-      titulo: 'Produto bom',
-      valorAtual: '6000',
-      img: image1,
-      porcentagem: '90',
-      valorPassado: '900',
-    }
   ],
 ]
 
@@ -74,35 +89,45 @@ export function SingleProduct() {
         <Descricao />
         <h1 className='flex justify-center text-start font-bold text-3xl mb-8'>Related Products</h1>
         <div className=' flex justify-center' >
-        {linhasDeCards.map((linha) => (
-        <div className="flex gap-x-12">
-          {linha.map(({ 
-            descrição,
-            estaComHover,
-            img,
-            porcentagem,
-            titulo,
-            valorAtual,
-            valorPassado
-          }) => (
-            <ProductCard
-              descrição={descrição}
-              estaComHover={estaComHover}
-              titulo={titulo}
-              valorAtual={valorAtual}
-              img={img}
-              porcentagem={porcentagem}
-              valorPassado={valorPassado}
-            />
-          ))}
+           {linhasDeCards.map((linha) => (
+            <div className="flex gap-x-12">
+              {linha.map(
+                ({
+                  descrição,
+                  estaComHover,
+                  img,
+                  estaComPorcentagem,
+                  porcentagem,
+                  estaComNew,
+                  titulo,
+                  valorAtual,
+                  temValorPassado,
+                  valorPassado,
+                }) => (
+                  <ProductCard
+                    descrição={descrição}
+                    estaComHover={estaComHover}
+                    titulo={titulo}
+                    valorAtual={valorAtual}
+                    img={img}
+                    estaComPorcentagem={estaComPorcentagem}
+                    porcentagem={porcentagem}
+                    estaComNew={estaComNew}
+                    temValorPassado={temValorPassado}
+                    valorPassado={valorPassado}
+                  />
+                )
+              )}
            <div>
-           <Button text='Show More' />
       </div>
         </div>
       ))}
      
       </div>
-      
+    
+      <div className='flex justify-center m-10'>
+      <Button />
+      </div>
 
         <Footer />
       </div>
