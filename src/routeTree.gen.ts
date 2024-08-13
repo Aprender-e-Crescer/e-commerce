@@ -13,6 +13,7 @@
 import { Route as rootRoute } from './routes/__root'
 import { Route as ShopImport } from './routes/shop'
 import { Route as ProductComparisonImport } from './routes/product-comparison'
+import { Route as CheckoutPageImport } from './routes/checkout-page'
 import { Route as CartImport } from './routes/cart'
 import { Route as IndexImport } from './routes/index'
 
@@ -25,6 +26,11 @@ const ShopRoute = ShopImport.update({
 
 const ProductComparisonRoute = ProductComparisonImport.update({
   path: '/product-comparison',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const CheckoutPageRoute = CheckoutPageImport.update({
+  path: '/checkout-page',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -56,6 +62,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CartImport
       parentRoute: typeof rootRoute
     }
+    '/checkout-page': {
+      id: '/checkout-page'
+      path: '/checkout-page'
+      fullPath: '/checkout-page'
+      preLoaderRoute: typeof CheckoutPageImport
+      parentRoute: typeof rootRoute
+    }
     '/product-comparison': {
       id: '/product-comparison'
       path: '/product-comparison'
@@ -78,6 +91,7 @@ declare module '@tanstack/react-router' {
 export const routeTree = rootRoute.addChildren({
   IndexRoute,
   CartRoute,
+  CheckoutPageRoute,
   ProductComparisonRoute,
   ShopRoute,
 })
@@ -92,6 +106,7 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/cart",
+        "/checkout-page",
         "/product-comparison",
         "/shop"
       ]
@@ -101,6 +116,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/cart": {
       "filePath": "cart.tsx"
+    },
+    "/checkout-page": {
+      "filePath": "checkout-page.tsx"
     },
     "/product-comparison": {
       "filePath": "product-comparison.tsx"
