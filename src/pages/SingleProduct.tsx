@@ -4,8 +4,9 @@ import { Footer } from '../components/footer'
 import { Rodape } from '../components/RodapeCompra'
 import { Descricao } from '../components/Description'
 import { ProductCard } from '@/components/ProductCard'
+import { Header } from '@/components/Header'
 import image1 from '../assets/Images.png'
-
+import { Button } from '../components/Button'
 const linhasDeCards = [
   [
     {
@@ -51,7 +52,10 @@ export function SingleProduct() {
   return (
     <div>
       <div>
+        <div>
+        <Header></Header>
 
+        </div>
         <div className="flex justify-center">
           <div className="ml-12 mt-12">
             <ImagemProduto />
@@ -68,7 +72,8 @@ export function SingleProduct() {
         </div>
         <hr />
         <Descricao />
-        <div>
+        <h1 className='flex justify-center text-start font-bold text-3xl mb-8'>Related Products</h1>
+        <div className=' flex justify-center' >
         {linhasDeCards.map((linha) => (
         <div className="flex gap-x-12">
           {linha.map(({ 
@@ -90,9 +95,14 @@ export function SingleProduct() {
               valorPassado={valorPassado}
             />
           ))}
+           <div>
+           <Button text='Show More' />
+      </div>
         </div>
       ))}
+     
       </div>
+      
 
         <Footer />
       </div>
