@@ -6,7 +6,7 @@ import img from '../assets/home/carrossel3.png'
 
 export function Carrossel() {
   return (
-    <div className="bg-[#FCF8F3] px-[250px] py-14 flex items-center justify-center gap-x-10 m-0 overflowx-hidden">
+    <div className="bg-[#FCF8F3] w-screen py-14 flex items-center justify-center gap-x-10 m-0 overflowx-hidden">
       <div className="flex flex-col gap-4">
         <p className="text-4xl font-bold text-[#3A3A3A] ">
           50+ Beautiful rooms

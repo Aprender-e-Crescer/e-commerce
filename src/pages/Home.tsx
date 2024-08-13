@@ -125,7 +125,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center gap-y-16">
         <BannerInicio />
         <Filtro />
-        <div className="flex flex-col items-center justify-center gap-y-5 pt-10">
+        <div className="flex flex-col items-center justify-center gap-y-5">
           <p className="font-bold text-[50px] text-[#3A3A3A]">Our Products</p>
           {linhasDeCards.map((linha) => (
             <div className="flex gap-x-12">
