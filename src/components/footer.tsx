@@ -10,7 +10,7 @@ export function Footer() {
               <br /> FL 33134 USA
             </p>
           </div>
- 
+
           <div className="flex gap-40 flex-wrap ">
             <div className="flex-1 flex flex-col">
               <p className="mb-8 text-base text-gray-600">Links</p>
@@ -21,7 +21,7 @@ export function Footer() {
                 <h4 className="mb-4 text-base">Contact</h4>
               </div>
             </div>
- 
+
             <div className="flex flex-col">
               <p className="mb-8 text-base text-gray-600">Help</p>
               <div className="text-black">
@@ -30,7 +30,7 @@ export function Footer() {
                 <h4 className="mb-7 ">Privacy Policies</h4>
               </div>
             </div>
- 
+
             <div className="flex-1 flex flex-col">
               <p className="mb-8 text-base text-gray-600">Newsletter</p>
               <div className="flex items-center gap-2">
@@ -53,4 +53,3 @@ export function Footer() {
     </footer>
   )
 }
- 
