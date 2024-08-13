@@ -5,10 +5,9 @@ import image4 from '../assets/Images (3).png'
 import { ProductCard } from '@/components/ProductCard'
 import { Buttons } from '@/components/Buttons'
 import { Filter } from '@/components/Filter'
-import Menu from '@/componentes/Menu'
 import Banner from '@/componentes/banner'
-import { Footer } from '@/components/footer'
 import FooterInfo from '@/components/FooterInfo'
+import { createFileRoute } from '@tanstack/react-router'
 
 const linhasDeCards = [
   [
@@ -207,10 +206,13 @@ const linhasDeCards = [
   ],
 ]
 
+export const Route = createFileRoute('/shop')({
+  component: Shop,
+})
+
 function Shop() {
   return (
     <>
-      <Menu />
       <Banner titulo="Shop" nomeTelaInicial="Home" />
       <Filter />
       <div className="flex flex-col items-center justify-center gap-y-16">
@@ -254,11 +256,8 @@ function Shop() {
           <div>
             <FooterInfo />
           </div>
-          <Footer />
         </div>
       </div>
     </>
   )
 }
-
-export default Shop

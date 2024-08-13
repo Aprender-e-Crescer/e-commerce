@@ -1,3 +1,5 @@
+import { Link } from "@tanstack/react-router";
+
 export function BannerInicio() {
   return (
     <div className="bg-[url('./assets/home/banner.png')] bg-cover w-screen h-[716px] flex relative">
@@ -10,9 +12,11 @@ export function BannerInicio() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
           <br /> elit tellus, luctus nec ullamcorper mattis.
         </p>
-        <button className="mt-6 border text-yellow-600 font-bold border-yellow-600 transition-colors duration-300 hover:bg-yellow-600 hover:text-white py-4 px-10">
-          BUY NOW
-        </button>
+        <Link to="/shop">
+          <button className="mt-6 border text-yellow-600 font-bold border-yellow-600 transition-colors duration-300 hover:bg-yellow-600 hover:text-white py-4 px-10">
+            BUY NOW
+          </button>
+        </Link>
       </div>
     </div>
   )
