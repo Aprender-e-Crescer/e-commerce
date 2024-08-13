@@ -5,7 +5,6 @@ import ProductComparison from './pages/product-comparison'
 export function App() {
   return (
     <>
-      <ProductComparison />
       <CheckoutPage />
     </>
   )

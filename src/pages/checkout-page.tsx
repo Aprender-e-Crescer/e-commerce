@@ -5,7 +5,7 @@ import { CheckoutBuy } from "@/components/checkout-buy"
 
 export function CheckoutPage() {
   return (
-    <div className="flex justify-between w-[900px]">
+    <div className="flex justify-between w-full">
     <div className="grid w-full max-w-sm items-center gap-1.5 justify-center">
         <h1 className="font-roboto flex text-2xl font-bold items-center justify-center h-14 top-5 ml-14 pl-4">Billing details</h1>
       <div className="flex gap-3">
