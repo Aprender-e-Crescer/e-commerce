@@ -24,26 +24,25 @@ export function ProductCard({
   img: string
 }) {
   return (
-    <div className="bg-[#F4F5F7] h-[446px] w-[285px] relative">
+    <div className="bg-[#F4F5F7] h-[446px] w-[285px] relative ">
       {estaComHover ? (
         <div className="relative">
-          <div className="flex font-bold absolute top-36 left-14 -mt-15 z-10 bg-white w-44 text-[#B88E2F] p-2 justify-center text-center">
-            Add to cart
+          <div className="flex font-bold absolute top-52 left-16 -mt-10 z-10 bg-white w-44 text-[#B88E2F] p-2 justify-center text-center">
+            Adicionar ao carrinho
           </div>
-          <div className="flex items-center justify-center text-center absolute top-64 text-white -mt-7 z-10 gap-x-6 pr-1 pl-5">
+          <div className="flex items-center justify-center text-center absolute top-64 text-white -mt-7 z-10 gap-x-2 pr-1 pl-1">
             <p className="flex gap-x-[2px] font-Poppins font-bold text-base">
-              <Share2 className="w-4 h-4 mt-1" /> Share
+              <Share2 className="w-4 h-4 mt-1" /> Compartilhar
             </p>
             <p className="flex gap-x-[2px] font-Poppins font-bold text-base">
-              <ArrowLeftRight className="w-4 h-4 mt-1" />
-              Compare
+              <ArrowLeftRight className="w-4 h-4 mt-1" /> Comparar
             </p>
             <p className="flex gap-x-[2px] font-Poppins font-bold text-base">
-              <Heart className="w-4 h-4 mt-1" /> Like
+              <Heart className="w-4 h-4 mt-1" /> Curtir
             </p>
           </div>
           <img
-            className="h-[297px] w-[285px] brightness-50 "
+            className="h-[297px] w-[285px] brightness-50 mt-1"
             src={img}
             alt="Imagem do produto"
           />
@@ -67,10 +66,9 @@ export function ProductCard({
             {descrição}
           </p>
         </div>
-        <div className="flex ml-4 gap-x-12">
-          <p className="text-[#3A3A3A] font-Poppins-Medium font-bold">
-            {valorAtual}
-          </p>
+        <div className="flex ml-4 gap-x-8">
+          <p className="text-[#3A3A3A] font-bold text-[22px]">{valorAtual}</p>
+
           {estaComPorcentagem && (
             <p className="absolute top-4 right-4 text-[#ffffff] bg-[#E97171] rounded-full w-10 h-10 text-[12px] flex items-center justify-center">
               {porcentagem}
