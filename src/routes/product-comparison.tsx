@@ -2,10 +2,19 @@ import { AddProduct } from '../components/AddProduct'
 import { Body } from '../components/Body'
 import { Card } from '../components/Card'
 import { Text } from '../components/Text'
+import Banner from '@/componentes/banner'
+import FooterInfo from '@/components/FooterInfo'
+import { createFileRoute } from '@tanstack/react-router'
+
+export const Route = createFileRoute('/product-comparison')({
+  component: ProductComparison,
+})
 
 function ProductComparison() {
   return (
     <>
+    <Banner nomeTelaInicial='Home' titulo='Product Comparison' />
+
       <div className="flex gap-36 ml-24 mt-12">
         <Text />
         <div className="flex gap-16 mb-28">
@@ -27,8 +36,7 @@ function ProductComparison() {
       <div className="flex ml-24">
         <Body />
       </div>
+      <FooterInfo/>
     </>
   )
 }
-
-export default ProductComparison

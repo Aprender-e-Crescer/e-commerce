@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "@tanstack/react-router";
 
 interface CartMenuProps {
   onClose: () => void;
@@ -68,15 +69,19 @@ export default function CartMenu({ onClose }: CartMenuProps) {
             </span>
           </div>
           <div className="flex justify-between space-x-2">
-            <Button variant="outline" className="flex-1 rounded-full">
-              Cart
-            </Button>
+            <Link to="/cart" onClick={onClose} className="flex-1 flex">
+              <Button variant="outline" className="flex-1 rounded-full">
+                Cart
+              </Button>
+            </Link>
             <Button variant="outline" className="flex-1 rounded-full">
               Checkout
             </Button>
-            <Button variant="outline" className="flex-1 rounded-full">
-              Comparison
-            </Button>
+            <Link to="/product-comparison" onClick={onClose}>
+              <Button variant="outline" className="flex-1 rounded-full">
+                Comparison
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

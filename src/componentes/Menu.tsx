@@ -4,6 +4,7 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoIosHeart } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import Logo from "../assets/logo.png";
+import { Link } from "@tanstack/react-router";
 
 interface MenuProps {
   onCartClick: () => void;
@@ -19,18 +20,18 @@ const Menu: React.FC<MenuProps> = ({ onCartClick }) => {
         </div>
 
         <nav className="flex-1 flex justify-center space-x-6">
-          <a href="#home" className="text-black hover:text-black">
+          <Link to="/" className="text-black hover:text-black">
             Home
-          </a>
-          <a href="#shop" className="text-black hover:text-black">
+          </Link>
+          <Link to="/shop" className="text-black hover:text-black">
             Shop
-          </a>
-          <a href="#about" className="text-black hover:text-black">
+          </Link>
+          <Link href="#about" className="text-black hover:text-black">
             About
-          </a>
-          <a href="#contact" className="text-black hover:text-black">
+          </Link>
+          <Link href="#contact" className="text-black hover:text-black">
             Contact
-          </a>
+          </Link>
         </nav>
 
         <div className="flex items-center space-x-6">
