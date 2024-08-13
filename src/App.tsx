@@ -1,7 +1,7 @@
-import Shop from './pages/Shop'
+import ProductComparison from "./pages/product-comparison";
 
 function App() {
-  return <Shop />
+  return <ProductComparison/>
 }
 
 export default App
