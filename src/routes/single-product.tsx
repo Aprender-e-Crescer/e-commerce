@@ -10,6 +10,7 @@ import { Button } from '../components/ButtonHome'
 import Imagem3 from '../assets/Images (3).png'
 import Imagem1 from '../assets/Images (1).png'
 import Imagem2 from '../assets/Images (2).png'
+import { createFileRoute } from '@tanstack/react-router'
 const linhasDeCards = [
   [
     {
@@ -63,13 +64,15 @@ const linhasDeCards = [
   ],
 ]
 
-export function SingleProduct() {
+export const Route = createFileRoute('/single-product')({
+  component: SingleProduct,
+})
+
+function SingleProduct() {
   return (
     <div>
       <div>
         <div>
-        <Header></Header>
-
         </div>
         <div className="flex justify-center">
           <div className="ml-12 mt-12">
@@ -128,8 +131,6 @@ export function SingleProduct() {
       <div className='flex justify-center m-10'>
       <Button />
       </div>
-
-        <Footer />
       </div>
     </div>
   )

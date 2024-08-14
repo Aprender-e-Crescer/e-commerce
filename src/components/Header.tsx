@@ -4,7 +4,7 @@ import rectangle from "../assets/rectangle.jpg"
 
 export function Header() {
   return (
-    <div className="w-full bg-[#FFFFF]">
+    <div className="w-full bg-[#FFFFF]" id="alvo">
 
       <div className="h-[100px] flex items-center justify-between px-8">
         <div className="flex items-center gap-4">

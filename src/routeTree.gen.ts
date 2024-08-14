@@ -11,12 +11,18 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as SingleProductImport } from './routes/single-product'
 import { Route as ShopImport } from './routes/shop'
 import { Route as ProductComparisonImport } from './routes/product-comparison'
 import { Route as CartImport } from './routes/cart'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
+
+const SingleProductRoute = SingleProductImport.update({
+  path: '/single-product',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const ShopRoute = ShopImport.update({
   path: '/shop',
@@ -70,6 +76,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ShopImport
       parentRoute: typeof rootRoute
     }
+    '/single-product': {
+      id: '/single-product'
+      path: '/single-product'
+      fullPath: '/single-product'
+      preLoaderRoute: typeof SingleProductImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -80,6 +93,7 @@ export const routeTree = rootRoute.addChildren({
   CartRoute,
   ProductComparisonRoute,
   ShopRoute,
+  SingleProductRoute,
 })
 
 /* prettier-ignore-end */
@@ -93,7 +107,8 @@ export const routeTree = rootRoute.addChildren({
         "/",
         "/cart",
         "/product-comparison",
-        "/shop"
+        "/shop",
+        "/single-product"
       ]
     },
     "/": {
@@ -107,6 +122,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/shop": {
       "filePath": "shop.tsx"
+    },
+    "/single-product": {
+      "filePath": "single-product.tsx"
     }
   }
 }
