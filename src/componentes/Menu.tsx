@@ -32,6 +32,9 @@ const Menu: React.FC<MenuProps> = ({ onCartClick }) => {
           <Link href="#contact" className="text-black hover:text-black">
             Contact
           </Link>
+           <Link to="/checkout-page" className="text-black hover:text-black">
+            Checkout
+          </Link>
         </nav>
 
         <div className="flex items-center space-x-6">
