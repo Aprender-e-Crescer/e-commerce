@@ -74,9 +74,11 @@ export default function CartMenu({ onClose }: CartMenuProps) {
                 Cart
               </Button>
             </Link>
-            <Button variant="outline" className="flex-1 rounded-full">
-              Checkout
-            </Button>
+            <Link to="/checkout-page" onClick={onClose}>
+              <Button variant="outline" className="flex-1 rounded-full">
+                Checkout
+              </Button>
+            </Link>
             <Link to="/product-comparison" onClick={onClose}>
               <Button variant="outline" className="flex-1 rounded-full">
                 Comparison

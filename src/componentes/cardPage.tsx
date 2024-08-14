@@ -1,5 +1,6 @@
 import React from "react";
 import ProductImage from '../assets/logo.cardPage.png'; // Caminho relativo correto
+import { Link } from "@tanstack/react-router";
 
 const CartPage: React.FC = () => {
   return (
@@ -62,9 +63,11 @@ const CartPage: React.FC = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <button className="h-14 w-52 rounded-full border border-gray-500 bg-[#f9f1e7] text-lg hover:bg-gray-200">
-              Check Out
-            </button>
+            <Link to="/checkout-page">
+              <button className="h-14 w-52 rounded-full border border-gray-500 bg-[#f9f1e7] text-lg hover:bg-gray-200">
+                Check Out
+              </button>
+            </Link>
           </div>
         </div>
       </div>
