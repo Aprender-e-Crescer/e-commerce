@@ -12,8 +12,7 @@ import image5 from '../assets/home/cardsdown1.png'
 import image6 from '../assets/home/cardsdown2.png'
 import image7 from '../assets/home/cardsdown3.png'
 import image8 from '../assets/home/cardsdown4.png'
-import { Footer } from '@/components/footer'
-import Menu from '@/componentes/Menu'
+import { createFileRoute } from '@tanstack/react-router'
 
 const linhasDeCards = [
   [
@@ -118,10 +117,13 @@ const linhasDeCards = [
   ],
 ]
 
-export default function Home() {
+export const Route = createFileRoute('/')({
+  component: Home,
+})
+
+function Home() {
   return (
     <>
-      <Menu />
       <div className="flex flex-col items-center justify-center gap-y-16">
         <BannerInicio />
         <Filtro />
@@ -162,7 +164,6 @@ export default function Home() {
         <Button />
         <Carrossel />
         <ImagemBaixo />
-        <Footer />
       </div>
     </>
   )
